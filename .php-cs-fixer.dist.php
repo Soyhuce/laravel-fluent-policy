@@ -1,8 +1,6 @@
 <?php declare(strict_types=1);
 
 $finder = PhpCsFixer\Finder::create()->in([
-    'config',
-    'database',
     'src',
     'tests',
 ]);
@@ -69,7 +67,15 @@ return (new PhpCsFixer\Config())->setRules([
     /*
      * Class Notation
      */
-    'class_attributes_separation' => ['elements' => ['const' => 'one', 'method' => 'one', 'property' => 'one', 'trait_import' => 'none', 'case' => 'none']],
+    'class_attributes_separation' => [
+        'elements' => [
+            'const' => 'one',
+            'method' => 'one',
+            'property' => 'one',
+            'trait_import' => 'none',
+            'case' => 'none',
+        ],
+    ],
     'class_definition' => [
         'multi_line_extends_each_single_line' => false,
         'single_item_single_line' => false,
@@ -82,7 +88,16 @@ return (new PhpCsFixer\Config())->setRules([
     'no_null_property_initialization' => false,
     'no_php4_constructor' => true, // risky
     'no_unneeded_final_method' => true, // risky
-    'ordered_class_elements' => ['order' => ['use_trait', 'constant', 'property_static', 'property', 'case', 'construct']],
+    'ordered_class_elements' => [
+        'order' => [
+            'use_trait',
+            'constant',
+            'property_static',
+            'property',
+            'case',
+            'construct',
+        ],
+    ],
     'ordered_interfaces' => ['order' => 'alpha', 'direction' => 'ascend'], // risky
     'ordered_traits' => true, // risky
     'protected_to_private' => false,

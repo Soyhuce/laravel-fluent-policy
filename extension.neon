@@ -1,0 +1,5 @@
+services:
+
+  - class: Soyhuce\FluentPolicy\Phpstan\WhenMethodTypeSpecifyingExtension
+    tags:
+      - phpstan.typeSpecifier.methodTypeSpecifyingExtension

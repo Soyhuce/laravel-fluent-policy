@@ -98,6 +98,56 @@ it('denies the action', function (FluentPolicy $policy): void {
     },
 ]);
 
+it('denies the action with custom status', function (FluentPolicy $policy): void {
+    expect(inspect($policy))
+        ->allowed()->toBeFalse()
+        ->status()->toBe(405);
+})->with([
+    'silly' => new class() extends FluentPolicy {
+        public function run(): Response
+        {
+            return $this->denyWithStatus(405);
+        }
+    },
+    'fallback' => new class() extends FluentPolicy {
+        public function run(): Response
+        {
+            return $this->allowWhen(false)->denyWithStatus(405);
+        }
+    },
+    'simple' => new class() extends FluentPolicy {
+        public function run(): Response
+        {
+            return $this->denyWithStatusWhen(true, 405)->allow();
+        }
+    },
+]);
+
+it('denies the action as not found', function (FluentPolicy $policy): void {
+    expect(inspect($policy))
+        ->allowed()->toBeFalse()
+        ->status()->toBe(404);
+})->with([
+    'silly' => new class() extends FluentPolicy {
+        public function run(): Response
+        {
+            return $this->denyAsNotFound();
+        }
+    },
+    'fallback' => new class() extends FluentPolicy {
+        public function run(): Response
+        {
+            return $this->allowWhen(false)->denyAsNotFound();
+        }
+    },
+    'simple' => new class() extends FluentPolicy {
+        public function run(): Response
+        {
+            return $this->denyAsNotFoundWhen(true)->allow();
+        }
+    },
+]);
+
 it('customises the response', function (): void {
     expect(inspect(
         new class() extends FluentPolicy {

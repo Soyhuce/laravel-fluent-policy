@@ -92,6 +92,24 @@ return $this->authorize($user, 'update', $post)
     ->deny();
 ```
 
+### Custom Http status
+
+You can deny the policy returning a custom http status code :
+
+```php
+return $this->denyWithStatusWhen($post->user_id !== $user->id, 404)
+        ->allow();
+// or $this->>allowWhen(...)->denyWithStatus(404);
+```
+
+In the case of `404` status code, you can use the shortcut
+
+```php
+return $this->denyAsNotFoundWhen($post->user_id !== $user->id)
+        ->allow();
+// or $this->>allowWhen(...)->denyAsNotFound();
+```
+
 ### Lazy evaluation
 
 The different branches `allowWhen` and `denyWhen` are evaluated lazily which mean that the following code is completely

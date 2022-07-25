@@ -19,6 +19,16 @@ abstract class FluentPolicy
         return $this->when($when, $this->deny($message, $code));
     }
 
+    protected function denyWithStatusWhen(bool $when, int $status, ?string $message = null, ?int $code = null): self
+    {
+        return $this->when($when, $this->denyWithStatus($status, $message, $code));
+    }
+
+    protected function denyAsNotFoundWhen(bool $when, ?string $message = null, ?int $code = null): self
+    {
+        return $this->when($when, $this->denyAsNotFound($message, $code));
+    }
+
     protected function when(bool $when, Response $response): self
     {
         throw_if($when, EarlyReturn::class, $response);
@@ -34,6 +44,16 @@ abstract class FluentPolicy
     protected function deny(?string $message = null, ?int $code = null): Response
     {
         return Response::deny($message, $code);
+    }
+
+    protected function denyWithStatus(int $status, ?string $message = null, ?int $code = null): Response
+    {
+        return Response::denyWithStatus($status, $message, $code);
+    }
+
+    protected function denyAsNotFound(?string $message = null, ?int $code = null): Response
+    {
+        return Response::denyAsNotFound($message, $code);
     }
 
     protected function otherwise(Response $response): Response

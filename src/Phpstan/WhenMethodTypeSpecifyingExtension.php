@@ -29,7 +29,11 @@ class WhenMethodTypeSpecifyingExtension implements MethodTypeSpecifyingExtension
         MethodCall $node,
         TypeSpecifierContext $context,
     ): bool {
-        return in_array($methodReflection->getName(), ['denyWhen', 'allowWhen', 'when']);
+        return in_array(
+            $methodReflection->getName(),
+            ['denyWhen', 'denyWithStatusWhen', 'denyAsNotFoundWhen', 'allowWhen', 'when'],
+            true
+        );
     }
 
     public function specifyTypes(

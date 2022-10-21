@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-fluent-policy` will be documented in this file.
 
+## 1.2.0 - 2022-10-21
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.3.3 to 1.3.4 by @dependabot in https://github.com/Soyhuce/laravel-fluent-policy/pull/4
+
+**Full Changelog**: https://github.com/Soyhuce/laravel-fluent-policy/compare/1.1.0...1.2.0
+
 ## 1.1.0 - 2022-07-25
 
 ### What's Changed

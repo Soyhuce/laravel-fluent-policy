@@ -2,6 +2,7 @@
 
 namespace Soyhuce\FluentPolicy\Tests;
 
+use Illuminate\Foundation\Testing\Concerns\InteractsWithDeprecationHandling;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 /**
@@ -9,4 +10,11 @@ use Orchestra\Testbench\TestCase as Orchestra;
  */
 class TestCase extends Orchestra
 {
+    use InteractsWithDeprecationHandling;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->withoutDeprecationHandling();
+    }
 }

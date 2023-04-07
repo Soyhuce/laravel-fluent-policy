@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-fluent-policy` will be documented in this file.
 
+## 1.4.0 - 2023-04-07
+
+### What's Changed
+
+- Add phpstan extension resolver configuration by @bastien-phi in https://github.com/Soyhuce/laravel-fluent-policy/pull/11
+
+**Full Changelog**: https://github.com/Soyhuce/laravel-fluent-policy/compare/1.3.0...1.4.0
+
 ## 1.3.0 - 2023-02-03
 
 ### What's Changed

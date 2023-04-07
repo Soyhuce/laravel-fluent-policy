@@ -60,5 +60,12 @@
     }
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "extra": {
+    "phpstan": {
+      "includes": [
+        "extension.neon"
+      ]
+    }
+  }
 }

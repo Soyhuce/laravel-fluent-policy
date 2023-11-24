@@ -2,6 +2,24 @@
 
 All notable changes to `laravel-fluent-policy` will be documented in this file.
 
+## 1.5.0 - 2023-11-24
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.3.6 to 1.4.0 by @dependabot in https://github.com/Soyhuce/laravel-fluent-policy/pull/12
+- Bump dependabot/fetch-metadata from 1.4.0 to 1.5.0 by @dependabot in https://github.com/Soyhuce/laravel-fluent-policy/pull/13
+- Bump dependabot/fetch-metadata from 1.5.0 to 1.5.1 by @dependabot in https://github.com/Soyhuce/laravel-fluent-policy/pull/14
+- Bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 by @dependabot in https://github.com/Soyhuce/laravel-fluent-policy/pull/15
+- Bump actions/checkout from 3 to 4 by @dependabot in https://github.com/Soyhuce/laravel-fluent-policy/pull/16
+- Bump stefanzweifel/git-auto-commit-action from 4 to 5 by @dependabot in https://github.com/Soyhuce/laravel-fluent-policy/pull/17
+- Run tests on PHP 8.3 by @EdenMl in https://github.com/Soyhuce/laravel-fluent-policy/pull/18
+
+### New Contributors
+
+- @EdenMl made their first contribution in https://github.com/Soyhuce/laravel-fluent-policy/pull/18
+
+**Full Changelog**: https://github.com/Soyhuce/laravel-fluent-policy/compare/1.4.0...1.5.0
+
 ## 1.4.0 - 2023-04-07
 
 ### What's Changed

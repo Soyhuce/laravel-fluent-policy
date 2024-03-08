@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-fluent-policy` will be documented in this file.
 
+## 1.6.0 - 2024-03-08
+
+### What's Changed
+
+* Laravel 11 support by @EdenMl in https://github.com/Soyhuce/laravel-fluent-policy/pull/20
+
+**Full Changelog**: https://github.com/Soyhuce/laravel-fluent-policy/compare/1.5.0...1.6.0
+
 ## 1.5.0 - 2023-11-24
 
 ### What's Changed

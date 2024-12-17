@@ -1,9 +1,9 @@
 # Write fluent policies in Laravel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/soyhuce/laravel-fluent-policy.svg?style=flat-square)](https://packagist.org/packages/soyhuce/laravel-fluent-policy)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/soyhuce/laravel-fluent-policy/run-tests?label=tests)](https://github.com/soyhuce/laravel-fluent-policy/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/soyhuce/laravel-fluent-policy/Check%20&%20fix%20styling?label=code%20style)](https://github.com/soyhuce/laravel-fluent-policy/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![GitHub PHPStan Action Status](https://img.shields.io/github/workflow/status/soyhuce/laravel-fluent-policy/PHPStan?label=phpstan)](https://github.com/soyhuce/laravel-fluent-policy/actions?query=workflow%3APHPStan+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/soyhuce/laravel-fluent-policy/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/soyhuce/laravel-fluent-policy/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/soyhuce/laravel-fluent-policy/php-cs-fixer.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/soyhuce/laravel-fluent-policy/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub PHPStan Action Status](https://img.shields.io/github/actions/workflow/status/soyhuce/laravel-fluent-policy/phpstan.yml?branch=main&label=phpstan)](https://github.com/soyhuce/laravel-fluent-policy/actions?query=workflow%3APHPStan+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/soyhuce/laravel-fluent-policy.svg?style=flat-square)](https://packagist.org/packages/soyhuce/laravel-fluent-policy)
 
 Write your policies fluently in Laravel.

@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-fluent-policy` will be documented in this file.
 
+## 1.7.0 - 2024-12-17
+
+### What's Changed
+
+* Upgrade dependencies and php 8.4 by @bastien-phi in https://github.com/Soyhuce/laravel-fluent-policy/pull/23
+
+**Full Changelog**: https://github.com/Soyhuce/laravel-fluent-policy/compare/1.6.0...1.7.0
+
 ## 1.6.0 - 2024-03-08
 
 ### What's Changed

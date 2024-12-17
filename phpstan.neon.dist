@@ -9,5 +9,3 @@ parameters:
         - types
     checkOctaneCompatibility: true
     checkModelProperties: true
-    checkMissingIterableValueType: true
-

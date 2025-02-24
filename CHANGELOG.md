@@ -2,6 +2,16 @@
 
 All notable changes to `laravel-fluent-policy` will be documented in this file.
 
+## 1.8.0 - 2025-02-24
+
+### What's Changed
+
+* Run tests with Laravel 12 by @bastien-phi in https://github.com/Soyhuce/laravel-fluent-policy/pull/24
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.1.0 by @dependabot in https://github.com/Soyhuce/laravel-fluent-policy/pull/22
+* Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/Soyhuce/laravel-fluent-policy/pull/19
+
+**Full Changelog**: https://github.com/Soyhuce/laravel-fluent-policy/compare/1.7.0...1.8.0
+
 ## 1.7.0 - 2024-12-17
 
 ### What's Changed

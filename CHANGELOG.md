@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-fluent-policy` will be documented in this file.
 
+## 1.9.0 - 2026-02-27
+
+### What's Changed
+
+* Add support for PHP 8.5 in https://github.com/Soyhuce/laravel-fluent-policy/pull/32
+
+**Full Changelog**: https://github.com/Soyhuce/laravel-fluent-policy/compare/1.8.0...1.9.0
+
 ## 1.8.0 - 2025-02-24
 
 ### What's Changed

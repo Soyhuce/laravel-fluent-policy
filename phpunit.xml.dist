@@ -3,12 +3,8 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
         backupGlobals="false"
-        backupStaticAttributes="false"
         bootstrap="vendor/autoload.php"
         colors="true"
-        convertErrorsToExceptions="true"
-        convertNoticesToExceptions="true"
-        convertWarningsToExceptions="true"
         processIsolation="false"
         stopOnFailure="false"
         executionOrder="random"
@@ -16,23 +12,22 @@
         failOnRisky="true"
         failOnEmptyTestSuite="true"
         beStrictAboutOutputDuringTests="true"
-        verbose="true"
+        cacheDirectory=".phpunit.cache"
+        backupStaticProperties="false"
+        displayDetailsOnTestsThatTriggerDeprecations="true"
+        displayDetailsOnTestsThatTriggerWarnings="true"
 >
     <testsuites>
         <testsuite name="Soyhuce Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
-    <coverage>
-        <include>
-            <directory suffix=".php">./src</directory>
-        </include>
-        <report>
-            <html outputDirectory="phpunit/coverage"/>
-            <text outputFile="phpunit/coverage.txt"/>
-        </report>
-    </coverage>
     <logging>
         <junit outputFile="phpunit/test-result.xml"/>
     </logging>
+    <source>
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+    </source>
 </phpunit>

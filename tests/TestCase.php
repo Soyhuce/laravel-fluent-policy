@@ -4,10 +4,9 @@ namespace Soyhuce\FluentPolicy\Tests;
 
 use Illuminate\Foundation\Testing\Concerns\InteractsWithDeprecationHandling;
 use Orchestra\Testbench\TestCase as Orchestra;
+use PHPUnit\Framework\Attributes\CoversNothing;
 
-/**
- * @coversNothing
- */
+#[CoversNothing]
 class TestCase extends Orchestra
 {
     use InteractsWithDeprecationHandling;
